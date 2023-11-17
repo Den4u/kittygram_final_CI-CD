@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework',
     'djoser',
-    'cats.aps.CatsConfig',
+    'cats.apps.CatsConfig',
 ]
 
 MIDDLEWARE = [
