@@ -10,4 +10,7 @@ RUN pip install -r requirements.txt --no-cache-dir
 
 COPY . .
 
+ARG ALLOWED_HOSTS
+ENV ALLOWED_HOSTS=$ALLOWED_HOSTS
+
 CMD ["gunicorn", "--bind", "0.0.0.0:9000", "kittygram_backend.wsgi"]
